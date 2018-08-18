@@ -5,7 +5,7 @@
 ## yarn start 
 
 # ENDPOINTS 
-## localhost: 
+## http://localhost:3000
 
 # DEPLOY 
 ## npm build

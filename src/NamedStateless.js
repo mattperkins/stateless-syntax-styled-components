@@ -2,6 +2,6 @@
 
 import React from 'react'
 
-const NamedStateless = ({title}) => <p>{title}</p>
+const NamedStateless = ({ title }) => <p>{title}</p>
 
-export default NamedStateless 
+export default NamedStateless

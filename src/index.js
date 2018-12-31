@@ -1,11 +1,11 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import registerServiceWorker from './registerServiceWorker'
-import styled, {injectGlobal} from 'styled-components'
-// import Syntax from './Syntax' 
+import styled, { createGlobalStyle } from 'styled-components'
+import Syntax from './Syntax'
 
-//eslint-disable-next-line
-injectGlobal`
+// eslint-disable-next-line
+createGlobalStyle`
 body {
 font-family: sans-serif;
 background: #f7f7f7;
@@ -17,28 +17,24 @@ const Wrapper = styled.div`
 margin: 100px;
 `
 
-
-// main ("ROOT") component 
+// main ("ROOT") component
 export default class Root extends React.Component {
+  // MAIN COMPONENT RENDER
+  render () {
+    // MAIN COMPONENT RETURN
+    return (
 
+      <Wrapper>
 
-// MAIN COMPONENT RENDER
-render() {
+        <h1>Hello, World!</h1>
+        <p>Review Syntax.js where necessary</p>
+        <Syntax />
+      </Wrapper>
 
-// MAIN COMPONENT RETURN
-return (
-
-<Wrapper>
-
-<h1>Hello, World!</h1>
-<p>Review Syntax.js where necessary</p>
-
-</Wrapper>
-
-)// end return
-}// end render
+    )// end return
+  }// end render
 }// end component
 
-ReactDOM.render(<Root />, 
+ReactDOM.render(<Root />,
   document.getElementById('root'))
-  registerServiceWorker()
+registerServiceWorker()

@@ -2,4 +2,4 @@
 
 import React from 'react'
 
-export default ({flip,msg}) => <p onClick={flip}>{msg}</p>
+export default ({ flip, msg }) => <p onClick={flip}>{msg}</p>
